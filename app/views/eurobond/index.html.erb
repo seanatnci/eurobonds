@@ -1,0 +1,22 @@
+<h1>Eurobond</h1>
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th>10Y Rate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @eurobonds.each do |bond| %>
+  <tr>    
+    <td><img src="./images/<%=  bond.flag %>"/></td>
+    <td><%=  bond.country %></td>
+     <td style="text-align:right"><%=  bond.price %></td>
+     <td style="text-align:right;color:<%= bond.changecolor %>"><%=  bond.displaychange %></td>
+     <td style="text-align:right;color:<%= bond.changecolor %>"><%=  bond.displaypercent %></td>
+     <td style="text-align:right; font-size:12px"><%=  bond.displaydate %></td>
+  </tr>
+  <% end %>
+</table>

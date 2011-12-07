@@ -1,0 +1,56 @@
+/* 
+    Document   : main
+    Created on : 07-Dec-2011, 15:58:33
+    Author     : seanc
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#progress {
+    -webkit-border-radius: 10px;
+    background-color: rgba(0,0,0,.7);
+    display:block;
+    color: white;
+    font-size: 18px;
+    height: 80px;
+    left: 60px;
+    line-height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    width: 200px;
+    max-height: 80px !important;
+    min-height: 80px !important;
+    z-index: 999;
+}
+#found { padding-top: 5px; padding-bottom: 8px;}
+#status {
+  padding: 1px;
+  padding-left:5px;
+  padding-right:5px;
+  color: #fff;
+  background: #ccc;
+}
+
+#status.fail {
+  background: #c00;
+}
+
+#status.success {
+  background: #0c0;
+}
+
+#status.offline {
+  background: #c00;
+}
+
+#status.online {
+  background: #0c0;
+}
+

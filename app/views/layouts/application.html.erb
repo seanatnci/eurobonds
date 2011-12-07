@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Euro Bond Rates</title>
+    <!-- include JQuery through Google API => Always have the latest version -->
+    <script type="text/javascript"> google.load("jquery", "1.3.2"); </script>
+
+    <!-- import JQTouch -->
+    <script src="javascripts/jqtouch/lib/jqtouch/jqtouch.js" type="application/x-javascript" charset="utf-8"></script>
+
+    <!-- Import JQTouch default style (iPhone look). Replace the string "themes/apple" with "themes/jqt" for a neutral (black) theme -->
+    <link type="text/css" rel="stylesheet" media="screen" href="javascripts/jqtouch/lib/jqtouch/jqtouch.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="javascripts/jqtouch/lib/themes/jqt/theme.css"/>
+
+    <!-- JavaScript goes here -->
+    <script type="text/javascript">
+      // Fire up JQTouch
+      var jQT = $.jQTouch({
+        statusBar: 'blue'
+      });
+    </script>
+  <%= stylesheet_link_tag :all %>
+
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+
+<%= yield %>
+
+</body>
+</html>
